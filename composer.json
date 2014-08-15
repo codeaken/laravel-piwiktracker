@@ -1,0 +1,22 @@
+{
+    "name": "codeaken/laravel-piwiktracker",
+    "description": "Insertion of Piwik tracking code and a hidden mode for hiding your tracking server url",
+    "keywords": ["piwik", "laravel", "analytics", "tracking"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Magnus Johansson",
+            "email": "magnus@codeaken.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Codeaken\\PiwikTracker\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
