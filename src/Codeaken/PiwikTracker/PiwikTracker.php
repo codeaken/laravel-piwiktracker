@@ -19,11 +19,11 @@ class PiwikTracker
     public function __construct()
     {
         // Extract the config
-        $this->siteId     = (int)Config::get('piwiktracker::site_id', 0);
-        $this->trackerUrl = trim(Config::get('piwiktracker::tracker_url', ''));
-        $this->enabled    = Config::get('piwiktracker::enabled', false);
-        $this->hidden     = Config::get('piwiktracker::hidden', false);
-        $this->token      = trim(Config::get('piwiktracker::token', ''));
+        $this->siteId     = (int)Config::get('laravel-piwiktracker::site_id', 0);
+        $this->trackerUrl = trim(Config::get('laravel-piwiktracker::tracker_url', ''));
+        $this->enabled    = Config::get('laravel-piwiktracker::enabled', false);
+        $this->hidden     = Config::get('laravel-piwiktracker::hidden', false);
+        $this->token      = trim(Config::get('laravel-piwiktracker::token', ''));
 
         // Normalize the tracker url
         $this->trackerUrl = str_replace(

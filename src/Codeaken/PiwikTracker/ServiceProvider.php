@@ -21,7 +21,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function boot()
     {
-        $this->package('codeaken/piwiktracker');
+        $this->package('codeaken/laravel-piwiktracker');
 
         // Include routes to handle the proxying of piwik requests if we
         // are running in hidden mode
